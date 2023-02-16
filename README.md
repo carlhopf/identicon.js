@@ -1,6 +1,37 @@
 identicon.js
 ============
 
+Forked from [stewartlord/identicon.js](https://github.com/stewartlord/identicon.js/)
+
+* Updated so it uses ESM syntax (`import`/`export`)
+* Removed support for PNG images. This is only usable with SVG.
+
+## example
+
+```
+npm i -S @nichoth/identicon
+```
+
+```js
+// set up options
+var hash = "c157a79031e1c40f85931829bc5fc552";  // 15+ hex chars
+var options = {
+      foreground: [0, 0, 0, 255],               // rgba black
+      background: [255, 255, 255, 255],         // rgba white
+      margin: 0.2,                              // 20% margin
+      size: 420,                                // 420px square
+      format: 'svg'                             // use SVG instead of PNG
+    };
+
+// create a base64 encoded SVG
+var data = new Identicon(hash, options).toString();
+
+// write to a data URI
+document.write('<img width=420 height=420 src="data:image/svg+xml;base64,' + data + '">');
+```
+
+----------
+
 ![Screenshot](/screenshot.png)
 
 [![CDNJS version](https://img.shields.io/cdnjs/v/identicon.js.svg)](https://cdnjs.com/libraries/identicon.js)
@@ -12,13 +43,6 @@ This little library will produce the same shape and (nearly) the same color as G
 Demo
 ----
 [View Demo](https://rawgithub.com/stewartlord/identicon.js/master/demo.html)
-
-Installation
------
-```
-npm install identicon.js --save
-```
-[![NPM Stats](https://nodei.co/npm/identicon.js.png?downloads=true)](https://npmjs.org/package/identicon.js)
 
 Options
 ----
@@ -37,7 +61,7 @@ Usage
 
 ##### Simple
 Generate the Identicon by supplying a hash string and size.
-Note: SVGs will produce clearer images (see below). To make PNGs crisper, you can try adding the CSS rule `image-rendering: pixelated;`
+Note: SVGs will produce clearer images (see below).
 
 ```js
 

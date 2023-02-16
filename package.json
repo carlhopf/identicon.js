@@ -16,6 +16,13 @@
     }
   },
   "author": "stewardlord",
+  "contributors": [
+    {
+      "name" : "Nick Thomas",
+      "email" : "nichoth@gmail.com",
+      "url" : "https://nichoth.com"
+    }
+  ],
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/stewartlord/identicon.js/issues"

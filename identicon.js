@@ -28,7 +28,7 @@ export const Identicon = function (hash, options) {
         size:       64,
         saturation: 0.7,
         brightness: 0.5,
-        format:     'png'
+        format:     'svg'
     };
 
     this.options = typeof(options) === 'object' ? options : this.defaults;
@@ -198,8 +198,9 @@ Svg.prototype = {
 
 if (window) window.Identicon = Identicon
 
-// if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-//     module.exports = Identicon;
-// } else {
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    module.exports = Identicon;
+}
+// else {
 //     window.Identicon = Identicon;
 // }
