@@ -1,6 +1,6 @@
 {
   "name": "@nichoth/identicon",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "GitHub-style identicons as PNGs or SVGs in JS.",
   "main": "identicon.js",
   "repository": {
@@ -21,9 +21,9 @@
   "author": "stewardlord",
   "contributors": [
     {
-      "name" : "Nick Thomas",
-      "email" : "nichoth@gmail.com",
-      "url" : "https://nichoth.com"
+      "name": "Nick Thomas",
+      "email": "nichoth@gmail.com",
+      "url": "https://nichoth.com"
     }
   ],
   "license": "BSD",
@@ -32,4 +32,3 @@
   },
   "homepage": "https://github.com/stewartlord/identicon.js"
 }
-
