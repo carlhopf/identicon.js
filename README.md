@@ -1,6 +1,8 @@
 identicon.js
 ============
 
+**note**
+
 Forked from [stewartlord/identicon.js](https://github.com/stewartlord/identicon.js/)
 
 * Updated so it uses ESM syntax (`import`/`export`)
