@@ -196,6 +196,7 @@ Svg.prototype = {
     }
 };
 
+if (window) window.Identicon = Identicon
 
 // if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
 //     module.exports = Identicon;

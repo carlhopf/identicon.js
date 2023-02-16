@@ -10,6 +10,11 @@
   "keywords": [
     "identicon"
   ],
+  "exports": {
+    ".": {
+      "import": "./identicon.js"
+    }
+  },
   "author": "stewardlord",
   "license": "BSD",
   "bugs": {
