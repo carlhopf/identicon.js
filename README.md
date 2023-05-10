@@ -15,6 +15,8 @@ npm i -S @nichoth/identicon
 ```
 
 ```js
+import { Identicon } from '@nichoth/identicon'
+
 // set up options
 var hash = "c157a79031e1c40f85931829bc5fc552";  // 15+ hex chars
 var options = {
