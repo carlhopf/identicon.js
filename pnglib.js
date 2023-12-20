@@ -9,7 +9,6 @@
 *
 */
 
-(function() {
 
 	// helper functions for that ctx
 	function write(buffer, offs) {
@@ -205,10 +204,5 @@
 		}
 	}
 
-	// modified from original source to support NPM
-	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-		module.exports = PNGlib;
-	} else {
-		window.PNGlib = PNGlib;
-	}
-})();
+	export PNGlib;
+
